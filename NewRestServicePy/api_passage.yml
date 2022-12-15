@@ -1,0 +1,29 @@
+openapi: 3.0.0
+tags:
+  - name: Passage variables macros
+  
+parameters:
+  - name: variable
+    in: path
+    tags: Passage de la variable
+    Schema:
+        type: object
+        properties:
+            libelle:
+                type: string
+            banque:
+                type: string
+                minimum: 0
+    required: true
+    description: Variable macroeconomique a recevoir
+    default: '{"test": 12}'
+    
+get:
+  description: None
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error

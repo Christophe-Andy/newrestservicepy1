@@ -1,0 +1,26 @@
+{
+	"libelle": "Scenario 1",
+	"TypeScenario": "Base",
+	"AnneeReference": 2022,
+	"Commentaire": "Un commentaire",
+	"Parametres": [
+		{
+			"Id": 1,
+			"Annee1": 1,
+			"Annee2": 2,
+			"Annee3": 3
+		},
+		{
+			"Id": 2,
+			"Annee1": 4,
+			"Annee2": 5,
+			"Annee3": 6
+		},
+		{
+			"Id": 3,
+			"Annee1": 7,
+			"Annee2": 8,
+			"Annee3": 9
+		}
+	]
+}

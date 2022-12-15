@@ -1,0 +1,23 @@
+openapi: 3.0.0
+tags:
+  - name: Recuperation indicateurs ou resultats
+
+parameters:
+  - name: indicateur
+    in: path
+    tags: Affichage indicateurs
+    required: true
+    type: string
+    required: true
+    description: Indicateur a renvoyer
+    default: Resultats
+    
+get:
+  description: None
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error

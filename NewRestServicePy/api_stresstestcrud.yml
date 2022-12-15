@@ -1,0 +1,23 @@
+openapi: 3.0.0
+tags:
+  - name: Gestion data
+  
+parameters:
+  - name: val
+    in: path
+    tags: Gestion data
+    schema:
+        type: string
+    required: true
+    description: Valeur a recevoir
+    default: '0'
+    
+get:
+  description: None
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error
